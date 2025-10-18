@@ -49,6 +49,15 @@ Check out the live demo of the project: [Invoice Processor](https://ai-invoice-p
 
 ---
 
+## ⚡ System Design Highlights
+## ⚡ System Design Highlights
+
+- **Client-Side OCR Processing**: Uses Tesseract.js to extract invoice text directly in the browser for low-latency feedback.
+- **Regex-Based Parsing**: Custom algorithms extract invoice number, vendor, dates, and total amount from the OCR output.
+- **User Feedback Loop**: Displays extracted fields, flags missing required fields, and provides basic confidence scores for review.
+
+---
+
 ## 📦 Installation & Setup
 
 ### 1. Clone the Repository
