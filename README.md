@@ -1,6 +1,6 @@
 # 🌟 Invoice Processing System – Enterprise Document Automation
 
-A smart, web-based system designed to automate invoice processing for businesses. Users can upload invoice images, and the system uses **OCR (Optical Character Recognition)** combined with **custom text parsing algorithms** to automatically extract key invoice details such as vendor name, invoice number, dates, and total amount. The system delivers real-time feedback, confidence scores, and handles missing or invalid data gracefully.
+A web-based intelligent system that automates invoice processing for businesses. Users can upload invoice images, and the system leverages OCR (Optical Character Recognition) and custom parsing algorithms to automatically extract key invoice information such as vendor name, invoice number, dates, and total amounts. The system provides real-time feedback, flags missing or inconsistent data, and ensures high reliability for enterprise workflows.
 
 ## Demo
 
@@ -11,11 +11,12 @@ Check out the live demo of the project: [Invoice Processor](https://ai-invoice-p
 ## 🚀 Features
 
 📸 **Invoice Image Upload**  
-- Supports drag-and-drop file uploads for scanned invoices or photographed invoices.
+- Drag-and-drop or file input support for scanned or photographed invoices.
+- Accepts common image formats (PNG, JPG, PDF preview).
 
 🧠 **Advanced OCR (Optical Character Recognition)**  
 - Built using **Tesseract.js** to extract raw text from images.
-- Optimized pre-processing for better text clarity and accuracy.
+- Includes preprocessing steps for better accuracy (e.g., grayscale conversion, thresholding).
 
 📝 **Smart Data Parsing**  
 - Custom regex-based parsing extracts key fields like:
@@ -23,16 +24,16 @@ Check out the live demo of the project: [Invoice Processor](https://ai-invoice-p
     - Invoice Number
     - Invoice Date & Due Date
     - Total Amount
-
+- Handles common formatting variations and edge cases.
 
 ✅ **Real-time Feedback**  
-- Provides immediate display of extracted fields.
-- Alerts users about any missing or suspicious data.
+- Displays extracted data instantly.
+- Highlights missing or potentially invalid fields.
 
 🎨 **Responsive & Intuitive UI**  
 - Built with **React** and **TypeScript**.
-- Clean, user-friendly drag-and-drop upload interface.
-- Mobile-friendly layout for better usability.
+- Visual drag-and-drop upload component with progress indicators.
+- Mobile-friendly, clean, and easy-to-use interface.
 
 ---
 
@@ -80,3 +81,9 @@ run dev
 4. Review the extracted fields and confidence score.
 5. Correct or fill in any flagged fields (e.g., missing data).
 6. Submit the finalized invoice data or export it for further processing.
+
+## 📈 Potential Improvements
+- Server-side batch processing for high-volume invoice uploads.
+- Integration with cloud storage for document persistence.
+- Enhanced OCR accuracy via machine learning-based preprocessing.
+
